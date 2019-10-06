@@ -1,6 +1,6 @@
 import React from 'react'
 
-import logo from '../img/logo2.svg'
+import logo2 from '../img/logo2.svg'
 
 const Footer = class extends React.Component {
   render() {
@@ -8,7 +8,7 @@ const Footer = class extends React.Component {
       <footer className="footer has-background-white">
         <div className="content has-text-centered" style={{marginBottom: '10px'}}>
           <img
-            src={logo}
+            src={logo2}
             alt="Machidania"
             style={{ width: '50px' }}
           />
