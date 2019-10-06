@@ -6,8 +6,7 @@ import Features from '../components/Features'
 
 export const AuthorsPageTemplate = ({
   heading,
-  description,
-  intro,
+  main,
 }) => (
   <div className="content">
     <section className="section section--gradient">
@@ -16,12 +15,11 @@ export const AuthorsPageTemplate = ({
           <div className="columns">
             <div className="column is-7 is-offset-1">
               <h3 className="josefin has-text-weight-semibold is-size-2">{heading}</h3>
-              <p>{description}</p>
             </div>
           </div>
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <Features gridItems={intro.blurbs} />
+              <Features gridItems={main.authors} />
             </div>
           </div>
         </div>
@@ -33,8 +31,8 @@ export const AuthorsPageTemplate = ({
 AuthorsPageTemplate.propTypes = {
   heading: PropTypes.string,
   description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
+  main: PropTypes.shape({
+    authors: PropTypes.array,
   }),
 }
 
@@ -45,8 +43,7 @@ const AuthorsPage = ({ data }) => {
     <Layout>
       <AuthorsPageTemplate
         heading={frontmatter.heading}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
+        main={frontmatter.main}
       />
     </Layout>
   )
@@ -67,9 +64,8 @@ export const authorsPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         heading
-        description
-        intro {
-          blurbs {
+        main {
+          authors {
             image {
               childImageSharp {
                 fluid(maxWidth: 240, quality: 64) {

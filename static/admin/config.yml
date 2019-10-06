@@ -63,6 +63,5 @@ collections:
         name: "authors"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "authors-page"}
-          - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Link, name: link, widget: text}, {label: Text, name: text, widget: text}, {label: Name, name: name, widget: text}]}]}
+          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Authors, name: authors, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Link, name: link, widget: text}, {label: Text, name: text, widget: text}, {label: Name, name: name, widget: text}]}]}
 
