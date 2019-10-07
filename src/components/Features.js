@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-import twitter from '../img/social/twitter.svg'
+import TwitterLink from '../components/TwitterLink'
 
 const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
@@ -19,15 +19,8 @@ const FeatureGrid = ({ gridItems }) => (
             </div>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px', marginTop: '10px' }}>
-            <h3 style={{ marginBottom: 5, paddingRight: 5 }}>{item.name}</h3>
-            <a title="twitter" href={item.link}>
-              <img
-                className="fas fa-lg"
-                src={twitter}
-                alt="Twitter"
-                style={{ width: '20px', height: '20px' }}
-              />
-            </a>
+            <h4 style={{ marginBottom: 5, paddingRight: 5 }}>{item.name}</h4>
+            <TwitterLink item={item} />
           </div>
           <p>{item.text}</p>
         </section>
