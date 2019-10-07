@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../img/logo.svg'
-import logo2 from '../img/logo2.svg'
+import baku from '../img/baku.png'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -75,7 +75,7 @@ const Navbar = class extends React.Component {
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
-              <img src={logo2} alt="Kaldi" style={{ height: '40px', paddingTop: '10px' }} />
+              <img src={baku} alt="Kaldi" style={{ height: '50px', paddingTop: '5px' }} />
             </div>
           </div>
         </div>
