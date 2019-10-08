@@ -1,6 +1,6 @@
 import React from 'react'
 
-import logo2 from '../img/logo2.svg'
+import baku from '../img/baku.png'
 
 const Footer = class extends React.Component {
   render() {
@@ -8,9 +8,9 @@ const Footer = class extends React.Component {
       <footer className="footer has-background-white">
         <div className="content has-text-centered" style={{marginBottom: '10px'}}>
           <img
-            src={logo2}
+            src={baku}
             alt="Machidania"
-            style={{ width: '50px' }}
+            style={{ width: '60px' }}
           />
           <p>© 2019 machidania</p>
         </div>
