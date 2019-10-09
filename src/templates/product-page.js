@@ -23,25 +23,23 @@ export const ProductPageTemplate = ({
       }}
     >
     </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-7 is-offset-1">
-              <h3 className="has-text-weight-semibold is-size-2 josefin">{heading}</h3>
-              <p>{description}</p>
-            </div>
+    <div className="container">
+      <div className="section">
+        <div className="columns">
+          <div className="column is-7 is-offset-1">
+            <h3 className="has-text-weight-semibold is-size-2 josefin">{heading}</h3>
+            <p>{description}</p>
           </div>
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <Features gridItems={intro.blurbs} />
-              <div className="columns">
-              </div>
+        </div>
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <Features gridItems={intro.blurbs} />
+            <div className="columns">
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </div>
 )
 

@@ -54,37 +54,35 @@ export const IndexPageTemplate = ({
         </h3>
       </div>
     </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content column is-12">
-                  <div className="tile">
-                    <h1 className="title josefin">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <p>{mainpitch.description}</p>
-                  </div>
+    <div className="container">
+      <div className="section">
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <div className="content">
+              <div className="content column is-12">
+                <div className="tile">
+                  <h1 className="title josefin">{mainpitch.title}</h1>
                 </div>
-                <div className="column is-12">
-                  <h1 className="has-text-weight-semibold josefin">
-                    Latest Stories
-                  </h1>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered josefin">
-                    <Link className="btn" to="/blog">
-                      More Stories
-                    </Link>
-                  </div>
+                <div className="tile">
+                  <p>{mainpitch.description}</p>
+                </div>
+              </div>
+              <div className="column is-12">
+                <h1 className="has-text-weight-semibold josefin">
+                  Latest Stories
+                </h1>
+                <BlogRoll />
+                <div className="column is-12 has-text-centered josefin">
+                  <Link className="btn" to="/blog">
+                    More Stories
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </div>
 )
 
