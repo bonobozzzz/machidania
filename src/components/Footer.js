@@ -10,9 +10,9 @@ const Footer = class extends React.Component {
           <img
             src={baku}
             alt="Machidania"
-            style={{ width: '60px' }}
+            style={{ width: '40px' }}
           />
-          <p>© 2019 machidania</p>
+          <p style={{ fontSize: '5px' }}>© 2019 machidania</p>
         </div>
       </footer>
     )
