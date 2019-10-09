@@ -9,22 +9,20 @@ export const AuthorsPageTemplate = ({
   main,
 }) => (
   <div className="content">
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-7 is-offset-1">
-              <h3 className="josefin has-text-weight-semibold is-size-2">{heading}</h3>
-            </div>
+    <div className="container">
+      <div className="section">
+        <div className="columns">
+          <div className="column is-7 is-offset-1">
+            <h3 className="josefin has-text-weight-semibold is-size-2">{heading}</h3>
           </div>
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <Features gridItems={main.authors} />
-            </div>
+        </div>
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <Features gridItems={main.authors} />
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </div>
 )
 
