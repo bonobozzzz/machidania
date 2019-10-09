@@ -20,6 +20,7 @@ export const IndexPageTemplate = ({
         })`,
         backgroundPosition: `right`,
         backgroundAttachment: `fixed`,
+        maxWidth: "100%",
       }}
     >
       <div
