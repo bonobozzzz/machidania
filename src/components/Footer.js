@@ -12,7 +12,7 @@ const Footer = class extends React.Component {
             alt="Machidania"
             style={{ width: '40px' }}
           />
-          <p style={{ fontSize: '5px' }}>© 2019 machidania</p>
+          <p style={{ fontSize: '10px' }}>© 2019 machidania</p>
         </div>
       </footer>
     )

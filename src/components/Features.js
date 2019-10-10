@@ -18,7 +18,7 @@ const FeatureGrid = ({ gridItems }) => (
               <PreviewCompatibleImage imageInfo={item} />
             </div>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px', marginTop: '10px' }}>
+          <div style={{ display: 'flex', marginBottom: '10px', marginTop: '40px' }}>
             <h4 style={{ marginBottom: 5, paddingRight: 5 }}>{item.name}</h4>
             <TwitterLink item={item} />
           </div>
