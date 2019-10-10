@@ -2,6 +2,7 @@
 templateKey: 'authors-page'
 path: /authors
 heading: Authors
+description: この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
 main:
   authors:
     - image: /img/test.png
