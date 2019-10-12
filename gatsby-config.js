@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Machidania',
+    title: 'Machidania.',
     description:
-      'Machidania Official',
+      'Machidania. Official',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
