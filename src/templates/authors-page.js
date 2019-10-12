@@ -7,24 +7,24 @@ import Features from '../components/Features'
 export const AuthorsPageTemplate = ({
   heading,
   main,
+  description,
 }) => (
   <div className="content">
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-7 is-offset-1">
-              <h3 className="josefin has-text-weight-semibold is-size-2">{heading}</h3>
-            </div>
+    <div className="container">
+      <div className="section">
+        <div className="columns">
+          <div className="column is-7 is-offset-1">
+            <h1 className="fog-color josefin has-text-weight-semibold">{heading}</h1>
+            <p>{description}</p>
           </div>
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <Features gridItems={main.authors} />
-            </div>
+        </div>
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <Features gridItems={main.authors} />
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </div>
 )
 
@@ -42,6 +42,7 @@ const AuthorsPage = ({ data }) => {
   return (
     <Layout>
       <AuthorsPageTemplate
+        description={frontmatter.description}
         heading={frontmatter.heading}
         main={frontmatter.main}
       />
@@ -64,6 +65,7 @@ export const authorsPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         heading
+        description
         main {
           authors {
             image {

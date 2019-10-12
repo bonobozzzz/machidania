@@ -38,13 +38,16 @@ const Navbar = class extends React.Component {
         className="navbar is-transparent"
         role="navigation"
         aria-label="main-navigation"
-        style={{borderBottom: '0.5px solid #abb1b5'}}
+        style={{borderBottom: '0.5px solid #abb1b5', position: "fixed", width: "100%"}}
       >
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ height: '30px' }} />
+            <Link to="/" className="navbar-item" style={{ paddingRight: 0 }} title="Logo">
+              <img src={logo} alt="machidania" style={{ height: '30px' }} />
             </Link>
+            <div className="navbar-end has-text-centered">
+              <img src={baku} alt="baku" style={{ height: '45px', paddingTop: '10px', paddingRight: "20px" }} />
+            </div>
             {/* Hamburger menu */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -73,9 +76,6 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/contact">
                 Contact
               </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <img src={baku} alt="Kaldi" style={{ height: '50px', paddingTop: '5px' }} />
             </div>
           </div>
         </div>

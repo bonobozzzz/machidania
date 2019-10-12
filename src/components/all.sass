@@ -20,13 +20,22 @@ a:hover
 .josefin
   font-family: 'Josefin Sans', sans-serif
 
+.fog-color
+  color: #abb1b5
+
 .section
+  padding-top: 100px!important
   font-family: 'Roboto', 'Noto Sans JP', sans-serif
   background-color: #fff
   .box
+    padding-top: 48px!important
     border: 0.5px solid #abb1b5
     box-shadow: none
     border-radius: 5px
+  .is-link
+    border: 0.5px solid #abb1b5!important
+    color: $black!important
+    background-color: #fff!important
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -49,7 +58,7 @@ a:hover
 // Helper Classes
 .full-width-image-container
   width: 100vw
-  height: 550px
+  height: 600px
   position: relative
   left: 50%
   right: 50%
@@ -62,12 +71,14 @@ a:hover
 
 .full-width-image
     width: 100vw
-    height: 550px
+    height: 600px
     background-size: cover
     background-position: bottom
     display: flex
     justify-content: center
     align-items: center
+    -webkit-animation: fade 0.5s linear 0s
+    animation: fade 0.5s linear 0s
 
 .full-width-image-short-height
     width: 100vw
@@ -88,6 +99,19 @@ a:hover
     text-decoration: none
     color: $black
     text-align: center
+
+@-webkit-keyframes fade
+    0%
+      opacity: 0
+    100%
+      opacity: 1
+
+@keyframes fade
+    0%
+      opacity: 0
+    100%
+      opacity: 1
+
 
 .margin-top-0
   margin-top: 0 !important
