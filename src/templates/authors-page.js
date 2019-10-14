@@ -9,12 +9,12 @@ export const AuthorsPageTemplate = ({
   main,
   description,
 }) => (
-  <div className="content">
+  <div className="content fade-in">
     <div className="container">
       <div className="section">
         <div className="columns">
-          <div className="column is-7 is-offset-1">
-            <h1 className="fog-color josefin has-text-weight-semibold">{heading}</h1>
+          <div className="column has-text-centered" style={{ paddingTop: "100px" }}>
+            <h1 className="has-text-weight-semibold">{heading}</h1>
             <p>{description}</p>
           </div>
         </div>

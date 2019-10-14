@@ -16,6 +16,8 @@ $black: #2b2523
 
 a:hover
   color: #abb1b5!important
+article:hover
+  opacity: 0.5!important
 
 .josefin
   font-family: 'Josefin Sans', sans-serif
@@ -23,15 +25,26 @@ a:hover
 .fog-color
   color: #abb1b5
 
+.tag-item
+  padding: 8px!important
+  border-radius: 5px!important
+  a
+    color: $black!important
+  a:hover
+    color: #abb1b5!important
+
+.fade-in
+  -webkit-animation: fade 0.7s linear 0s
+  animation: fade 0.7s linear 0s
+
 .section
-  padding-top: 100px!important
   font-family: 'Roboto', 'Noto Sans JP', sans-serif
   background-color: #fff
   .box
     padding-top: 48px!important
-    border: 0.5px solid #abb1b5
+    border-bottom: 0.5px solid #eeeaec
     box-shadow: none
-    border-radius: 5px
+    border-radius: 0
   .is-link
     border: 0.5px solid #abb1b5!important
     color: $black!important
@@ -39,6 +52,9 @@ a:hover
 
 .navbar .navbar-menu
   box-shadow:none !important
+
+.column .head
+  padding: 48px 42px!important
 
 .content .taglist
   list-style: none
@@ -77,8 +93,8 @@ a:hover
     display: flex
     justify-content: center
     align-items: center
-    -webkit-animation: fade 0.5s linear 0s
-    animation: fade 0.5s linear 0s
+    -webkit-animation: fade 0.7s linear 0s
+    animation: fade 0.7s linear 0s
 
 .full-width-image-short-height
     width: 100vw
@@ -157,8 +173,10 @@ $menu-label-color: $white-ter
     display: inline
 
 // blog roll
-.blog-list-item.is-featured
-  background-color: #d6400033;
+.blog-list-item.tile
+  background-color: #fff
+.blog-title
+  text-decoration: none!important
 .blog-list-item header
   display: flex;
   margin-bottom: 1em;
@@ -180,7 +198,7 @@ $menu-label-color: $white-ter
     display: block
   .blog-list-item .featured-thumbnail
     text-align: center;
-    max-width: 70%;
+    max-width: 100%;
     margin: 0 0 1em;
 
 .is-vertical-center
