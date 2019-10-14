@@ -36,12 +36,14 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="content">
+        <div className="content fade-in">
           <div className="container">
             <section className="section">
               <div className="columns">
                 <div className="column is-10 is-offset-1">
-                  <h1 className="josefin has-text-weight-semibold">Contact</h1>
+                  <h1 className="has-text-weight-semibold has-text-centered" style={{ paddingTop: "100px" }}>
+                    Contact
+                  </h1>
                   <form
                     name="contact"
                     method="post"

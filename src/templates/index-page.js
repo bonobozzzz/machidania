@@ -32,42 +32,46 @@ export const IndexPageTemplate = ({
         }}
       >
         <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-3-widescreen josefin"
+          className="has-text-weight-semibold is-size-3-mobile is-size-2-tablet is-size-4-widescreen"
           style={{
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
+            opacity: 0.8,
           }}
         >
           {title}
         </h1>
         <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen josefin"
+          className="has-text-weight-semibold is-size-5-mobile is-size-5-tablet is-size-5-widescreen"
           style={{
             color: 'white',
             lineHeight: '1',
             padding: '0.5em',
+            opacity: 0.8,
           }}
         >
           {subheading}
         </h3>
       </div>
     </div>
-    <div className="container">
+    <div className="container fade-in">
       <div className="section">
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="content">
-              <div className="content column is-12">
-                <div className="tile">
-                  <h1 className="josefin">{mainpitch.title}</h1>
+              <div className="content column is-12" style={{ padding: "0 24px" }} >
+                <div>
+                  <h1 className="has-text-centered" style={{ padding: "40px" }}>
+                    {mainpitch.title}
+                  </h1>
                 </div>
-                <div className="tile">
+                <div>
                   <p>{mainpitch.description}</p>
                 </div>
               </div>
               <div className="column is-12">
-                <h1 className="has-text-weight-semibold josefin">
+                <h1 className="has-text-centered" style={{ paddingTop: "40px" }}>
                   Latest Stories
                 </h1>
                 <BlogRoll />

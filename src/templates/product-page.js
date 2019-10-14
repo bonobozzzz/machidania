@@ -11,13 +11,15 @@ export const ProductPageTemplate = ({
   intro,
   image,
 }) => (
-  <div className="content">
+  <div className="content fade-in">
     <div className="container">
       <div className="section">
-        <div className="columns">
-          <div className="column is-7 is-offset-1">
-            <h1 className="has-text-weight-semibold josefin">{heading}</h1>
-            <p>{description}</p>
+        <div className="columns has-text-centered">
+          <div className="column">
+            <div style={{ paddingTop: "100px" }} >
+              <h1 className="has-text-weight-semibold">{heading}</h1>
+              <p>{description}</p>
+            </div>
           </div>
         </div>
         <div className="columns">

@@ -2,6 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import TwitterLink from '../components/TwitterLink'
+import { Link } from 'gatsby'
+import { kebabCase } from 'lodash'
+
 
 const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
@@ -11,7 +14,7 @@ const FeatureGrid = ({ gridItems }) => (
           <div className="has-text-centered">
             <div
               style={{
-                width: '180px',
+                width: '280px',
                 display: 'inline-block',
               }}
             >
@@ -23,6 +26,11 @@ const FeatureGrid = ({ gridItems }) => (
             <TwitterLink item={item} />
           </div>
           <p>{item.text}</p>
+          <Link to={`/tags/${kebabCase(item.name)}/`} className="josefin" style={{
+            color: "#2b2523", paddingRight: "5px", fontSize: "18px"
+            }}>
+            Read Stories
+          </Link>
         </section>
       </div>
     ))}
