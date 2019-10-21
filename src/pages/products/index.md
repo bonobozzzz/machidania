@@ -5,7 +5,7 @@ title: Our Coffee
 image: /img/jumbotron.jpg
 heading: Products
 description: >-
-  この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています
+  Machidania.が刊行している合同誌たち。
 intro:
   blurbs:
     - image: /img/syukusai.png
