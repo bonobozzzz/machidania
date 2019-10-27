@@ -36,7 +36,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="content fade-in">
+        <div className="content">
           <div className="container">
             <section className="section">
               <div className="columns">

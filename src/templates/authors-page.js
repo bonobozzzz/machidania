@@ -9,7 +9,7 @@ export const AuthorsPageTemplate = ({
   main,
   description,
 }) => (
-  <div className="content fade-in">
+  <div className="content ">
     <div className="container">
       <div className="section">
         <div className="columns">
