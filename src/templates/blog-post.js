@@ -19,10 +19,10 @@ export const BlogPostTemplate = ({
   return (
     <section className="section" style={{paddingTop: "100px"}}>
       {helmet || ''}
-      <div className="container content fade-in">
+      <div className="container content ">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+            <h1 className="is-size-5-mobile is-size-4-widescreen has-text-weight-bold is-bold-light" style={{paddingLeft: "5px"}}>
               {title}
             </h1>
             {tags && tags.length ? (

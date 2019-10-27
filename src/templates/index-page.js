@@ -55,7 +55,7 @@ export const IndexPageTemplate = ({
         </h3>
       </div>
     </div>
-    <div className="container fade-in">
+    <div className="container ">
       <div className="section">
         <div className="columns">
           <div className="column is-10 is-offset-1">

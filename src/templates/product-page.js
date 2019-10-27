@@ -11,7 +11,7 @@ export const ProductPageTemplate = ({
   intro,
   image,
 }) => (
-  <div className="content fade-in">
+  <div className="content ">
     <div className="container">
       <div className="section">
         <div className="columns has-text-centered">

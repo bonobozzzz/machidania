@@ -20,7 +20,7 @@ class TagRoute extends React.Component {
 
     return (
       <Layout>
-        <section className="section fade-in" style={{ paddingTop: '100px' }}>
+        <section className="section " style={{ paddingTop: '100px' }}>
           <Helmet title={`${tag} | ${title}`} />
           <div className="container content">
             <div className="columns">
