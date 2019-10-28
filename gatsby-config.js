@@ -4,6 +4,7 @@ module.exports = {
     description:
       'Machidania. Official',
   },
+  
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
