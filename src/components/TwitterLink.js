@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import twitter from '../img/social/twitter.svg'
 
 const TwitterLink = ({ item }) => {
-  if (item.link.includes("twitter.com")) {
+  if (item.link !== undefined && item.link.includes("twitter.com")) {
     return (
       <a title="twitter" href={item.link}>
       <img

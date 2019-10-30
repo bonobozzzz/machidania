@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import note from '../img/social/note.png'
 
 const NoteLink = ({ item }) => {
-  if (item.link.includes("note.mu")) {
+  if (item.link !== undefined && item.link.includes("note.mu")) {
     return (
     <a title="note" href={item.link}>
       <img
