@@ -16,8 +16,8 @@ export const ProductPageTemplate = ({
       <div className="section">
         <div className="columns has-text-centered">
           <div className="column">
-            <div style={{ paddingTop: "100px" }} >
-              <h1 className="has-text-weight-semibold">{heading}</h1>
+            <div style={{ paddingTop: "100px",}} >
+              <h1 className="has-text-weight-semibold josefin">{heading}</h1>
               <p>{description}</p>
             </div>
           </div>

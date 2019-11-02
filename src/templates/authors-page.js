@@ -14,7 +14,7 @@ export const AuthorsPageTemplate = ({
       <div className="section">
         <div className="columns">
           <div className="column has-text-centered" style={{ paddingTop: "100px" }}>
-            <h1 className="has-text-weight-semibold">{heading}</h1>
+            <h1 className="has-text-weight-semibold josefin">{heading}</h1>
             <p>{description}</p>
           </div>
         </div>
