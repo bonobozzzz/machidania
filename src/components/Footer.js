@@ -2,9 +2,6 @@ import React from 'react'
 import twitter from '../img/social/twitter.svg'
 import note from '../img/social/note.png'
 
-
-import baku from '../img/baku.png'
-
 const Footer = class extends React.Component {
   render() {
     return (

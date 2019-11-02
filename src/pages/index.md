@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Reiwa Mysterious Stories
 image: /img/home-jumbotron.jpg
-subheading: released on 2019/11/25
+subheading: released on 2019/11/24
 mainpitch:
   title: Introduction
   description: >

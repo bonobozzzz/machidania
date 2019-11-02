@@ -41,7 +41,7 @@ export default class Index extends React.Component {
             <section className="section">
               <div className="columns">
                 <div className="column is-10 is-offset-1">
-                  <h1 className="has-text-weight-semibold has-text-centered" style={{ paddingTop: "100px" }}>
+                  <h1 className="has-text-weight-semibold has-text-centered josefin" style={{ paddingTop: "100px" }}>
                     Contact
                   </h1>
                   <form
@@ -77,7 +77,7 @@ export default class Index extends React.Component {
                     </div>
                     <div className="field">
                       <label className="label" htmlFor={'email'}>
-                        Email
+                        メールアドレス
                       </label>
                       <div className="control">
                         <input
