@@ -5,11 +5,12 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import note from '../img/social/note_big.png'
 
 export const BlogPostTemplate = ({
   content,
   contentComponent,
-  description,
+  link,
   tags,
   title,
   helmet,
@@ -36,8 +37,12 @@ export const BlogPostTemplate = ({
                 </ul>
               </div>
             ) : null}
-            <p>{description}</p>
             <PostContent content={content} />
+            <div className="has-text-centered" style={{marginTop: "50px"}}>
+              <a className="josefin" style={{color: "#2b2523", fontSize: "18px"}}
+                href={link} target="_blank">続きはnoteへ
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -48,7 +53,7 @@ export const BlogPostTemplate = ({
 BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
-  description: PropTypes.string,
+  link: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
 }
@@ -61,13 +66,13 @@ const BlogPost = ({ data }) => {
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
-        description={post.frontmatter.description}
+        link={post.frontmatter.link}
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
-              name="description"
-              content={`${post.frontmatter.description}`}
+              name="link"
+              content={`${post.frontmatter.link}`}
             />
           </Helmet>
         }
@@ -94,7 +99,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
-        description
+        link
         tags
       }
     }
