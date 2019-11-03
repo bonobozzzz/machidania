@@ -4,8 +4,8 @@ module.exports = {
     description:
       'Machidania. Official',
   },
-  
   plugins: [
+    'gatsby-plugin-typescript',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
