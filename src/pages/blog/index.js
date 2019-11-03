@@ -12,7 +12,7 @@ export default class BlogIndexPage extends React.Component {
             <section className="section">
               <div className="columns">
                 <div className="column" style={{ paddingTop: "100px" }}>
-                  <h1 className="has-text-weight-semibold has-text-centered">Stories</h1>
+                  <h1 className="has-text-weight-semibold has-text-centered josefin">Stories</h1>
                 </div>
               </div>
               <div className="columns">

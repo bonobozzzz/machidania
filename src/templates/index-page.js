@@ -62,7 +62,7 @@ export const IndexPageTemplate = ({
             <div className="content">
               <div className="content column is-12" style={{ padding: "0 24px" }} >
                 <div>
-                  <h1 className="has-text-centered" style={{ padding: "40px" }}>
+                  <h1 className="has-text-centered josefin" style={{ padding: "40px" }}>
                     {mainpitch.title}
                   </h1>
                 </div>
@@ -71,7 +71,7 @@ export const IndexPageTemplate = ({
                 </div>
               </div>
               <div className="column is-12">
-                <h1 className="has-text-centered" style={{ paddingTop: "40px" }}>
+                <h1 className="has-text-centered josefin" style={{ paddingTop: "40px" }}>
                   Latest Stories
                 </h1>
                 <BlogRoll />
