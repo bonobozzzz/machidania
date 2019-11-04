@@ -9,7 +9,6 @@ export const ProductPageTemplate = ({
   heading,
   description,
   intro,
-  image,
 }) => (
   <div className="content ">
     <div className="container">

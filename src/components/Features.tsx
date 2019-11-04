@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-import TwitterLink from '../components/TwitterLink'
-import NoteLink from '../components/NoteLink'
+import PreviewCompatibleImage from './PreviewCompatibleImage'
+import TwitterLink from './TwitterLink'
+import NoteLink from './NoteLink'
 import { Link } from 'gatsby'
 import { kebabCase } from 'lodash'
 
@@ -24,8 +24,8 @@ const FeatureGrid = ({ gridItems }) => (
           </div>
           <div style={{ display: 'flex', marginBottom: '10px', marginTop: '40px' }}>
             <h4 style={{ marginBottom: 5, paddingRight: 5 }}>{item.name}</h4>
-            <TwitterLink item={item} />
-            <NoteLink item={item} />
+            <TwitterLink link={item.link} />
+            <NoteLink link={item.link} />
           </div>
           <p>{item.text}</p>
           <Link to={`/tags/${kebabCase(item.name)}/`} className="josefin" style={{

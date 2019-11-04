@@ -104,7 +104,7 @@ export default class Index extends React.Component {
                         />
                       </div>
                     </div>
-                    <div className="field">
+                    <div className="field has-text-centered" style={{ marginTop: "30px" }}>
                       <button className="button is-link" type="submit">
                         送信
                       </button>
