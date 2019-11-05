@@ -11,7 +11,7 @@ interface imageInfoType {
 }
 
 const PreviewCompatibleImage = ({ imageInfo }: imageInfoType) => {
-  const imageStyle = { borderRadius: '0px' }
+  const imageStyle = { borderRadius: '5px' }
   const { alt = '', childImageSharp, image } = imageInfo
 
 
