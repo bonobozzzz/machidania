@@ -1,8 +1,13 @@
-import React from 'react'
+import * as React from 'react'
 import twitter from '../img/social/twitter.svg'
 import note from '../img/social/note.png'
 
-const Footer = class extends React.Component {
+interface SNSlink {
+  note?: string;
+  twitter?: string;
+}
+
+const Footer = class extends React.Component<SNSlink> {
   render() {
     return (
       <footer className="footer has-background-white">
