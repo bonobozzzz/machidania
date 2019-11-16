@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: '[lullaby of birdland]'
-date: 2019-11-01T15:04:10.000Z
+author: nanica marui
 featuredpost: false
 featuredimage: /img/lullaby_of_birdland.jpg
 link: https://note.mu/machidania/n/n827c4d930722

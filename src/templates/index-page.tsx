@@ -32,18 +32,19 @@ export const IndexPageTemplate = ({
         }}
       >
         <h1
-          className="has-text-weight-semibold is-size-3-mobile is-size-2-tablet is-size-4-widescreen"
+          className="has-text-weight-normal is-size-3-mobile is-size-2-tablet is-size-4-widescreen m-plus-rounded"
           style={{
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
             opacity: 0.8,
+            letterSpacing: "11px",
           }}
         >
           {title}
         </h1>
         <h3
-          className="has-text-weight-semibold is-size-5-mobile is-size-5-tablet is-size-5-widescreen"
+          className="has-text-weight-normal is-size-5-mobile is-size-5-tablet is-size-5-widescreen josefin"
           style={{
             color: 'white',
             lineHeight: '1',

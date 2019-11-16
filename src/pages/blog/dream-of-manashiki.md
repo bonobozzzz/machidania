@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: 末那識の夢
-date: 2019-11-01T15:04:10.000Z
+author: kawaiiyumegirl
 featuredpost: false
 featuredimage: /img/dream_of_manashiki.jpg
 link: https://note.mu/machidania/n/n36d64b7f47d1

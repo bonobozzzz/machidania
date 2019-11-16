@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: 享楽のうた
-date: 2019-11-01T15:04:10.000Z
+author: akkt
 featuredpost: false
 featuredimage: /img/kyorakunouta.jpg
 link: https://note.mu/machidania/n/n174aa8d50b55
