@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: オーバーラップ
-date: 2019-10-28T15:04:10.000Z
+author: meme
 featuredpost: false
 featuredimage: /img/overrap.jpg
 link: https://note.mu/machidania/n/n189c7f725fe1

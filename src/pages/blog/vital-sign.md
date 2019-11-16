@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: バイタルサイン
-date: 2019-10-27T15:04:10.000Z
+author: kawaiiyumegirl
 featuredpost: false
 featuredimage: /img/vitalsign.jpg
 link: https://note.mu/machidania/n/ndd7cb9891cb9

@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Reiwa Mysterious Stories
+title: 令和の怪談
 image: /img/home-jumbotron.jpg
 subheading: released on 2019/11/24
 mainpitch:

@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: ディアスポラ
-date: 2019-11-01T15:04:10.000Z
+author: meme
 featuredpost: false
 featuredimage: /img/diaspora.jpg
 link: https://note.mu/machidania/n/nc512df3a6789
