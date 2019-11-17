@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import BlogNoteLink from '../components/BlogNoteLink'
 
 export const BlogPostTemplate = ({
   content,
@@ -37,11 +38,7 @@ export const BlogPostTemplate = ({
               </div>
             ) : null}
             <PostContent content={content} />
-            <div className="has-text-centered" style={{marginTop: "50px"}}>
-              <a className="josefin" style={{color: "#2b2523", fontSize: "18px"}}
-                href={link} target="_blank">続きはnoteへ
-              </a>
-            </div>
+            <BlogNoteLink link={link} />
           </div>
         </div>
       </div>
