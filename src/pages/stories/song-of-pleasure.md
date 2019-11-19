@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+id: 5
 title: 享楽のうた
 author: akkt
 featuredpost: false

@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+id: 1
 title: ディアスポラ
 author: meme
 featuredpost: false

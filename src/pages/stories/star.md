@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+id: 6
 title: '星の夜'
 author: '春紫苑'
 featuredpost: false

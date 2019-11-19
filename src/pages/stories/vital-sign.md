@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+id: 7
 title: バイタルサイン
 author: kawaiiyumegirl
 featuredpost: false
