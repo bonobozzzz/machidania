@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+id: 2
 title: 末那識の夢
 author: kawaiiyumegirl
 featuredpost: false

@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+id: 3
 title: '[lullaby of birdland]'
 author: nanica marui
 featuredpost: false

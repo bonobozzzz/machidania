@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+id: 8
 title: エウリュディケの画筆
 author: nanica marui
 featuredimage: /img/euryd.jpg
