@@ -4,7 +4,7 @@ id: 9
 title: 眠りゆく者に敬礼を
 author: meme
 featuredpost: false
-featuredimage: /img/salue.jpg
+featuredimage: /img/salute.jpg
 tags:
   - meme
   - 令和の怪談
