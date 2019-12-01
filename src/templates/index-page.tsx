@@ -77,7 +77,7 @@ export const IndexPageTemplate = ({
                 </h1>
                 <BlogRoll />
                 <div className="column is-12 has-text-centered josefin">
-                  <Link className="btn" to="/blog">
+                  <Link className="btn" to="/stories">
                     More Stories
                   </Link>
                 </div>
