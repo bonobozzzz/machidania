@@ -5,6 +5,13 @@ module.exports = {
       'Machidania. Official',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        head: true,
+      },
+    },
     'gatsby-plugin-typescript',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
@@ -14,13 +21,6 @@ module.exports = {
       options: {
         path: `${__dirname}/static/img`,
         name: 'uploads',
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
-        head: true,
       },
     },
     {
