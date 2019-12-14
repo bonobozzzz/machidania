@@ -6,6 +6,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import BlogNoteLink from '../components/BlogNoteLink'
+import "prismjs/themes/prism-tomorrow.css"
 
 export const BlogPostTemplate = ({
   content,
