@@ -6,6 +6,8 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import BlogNoteLink from '../components/BlogNoteLink'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTag } from '@fortawesome/free-solid-svg-icons'
 
 export const BlogPostTemplate = ({
   content,
@@ -20,7 +22,7 @@ export const BlogPostTemplate = ({
   return (
     <section className="section" style={{paddingTop: "100px"}}>
       {helmet || ''}
-      <div className="container content ">
+      <div className="container content blogpost">
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <h1 className="is-size-5-mobile is-size-4-widescreen has-text-weight-bold is-bold-light" style={{paddingLeft: "5px"}}>
@@ -31,7 +33,10 @@ export const BlogPostTemplate = ({
                 <ul className="taglist">
                   {tags.map(tag => (
                     <li key={tag + `tag`} className="tag-item">
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                      <Link to={`/tags/${kebabCase(tag)}/`}>
+                        <FontAwesomeIcon icon={faTag} style={{padding: "2px", color: "grey"}}/>
+                        {tag}
+                      </Link>
                     </li>
                   ))}
                 </ul>

@@ -2,6 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTag } from '@fortawesome/free-solid-svg-icons'
 
 class TagRoute extends React.Component<TagType> {
   render() {
@@ -10,6 +12,7 @@ class TagRoute extends React.Component<TagType> {
       <li key={post.node.fields.slug} style={{ borderBottom: "0.5px solid #abb1b5", padding: 0}}>
         <Link to={post.node.fields.slug}>
           <h4>{post.node.frontmatter.title}</h4>
+          <p className="josefin" style={{color: "#2b2523"}}>written by {post.node.frontmatter.author}</p>
         </Link>
       </li>
     ))
@@ -28,7 +31,10 @@ class TagRoute extends React.Component<TagType> {
               className="column is-10 is-offset-1"
               style={{ marginBottom: '6rem'}}
             >
-              <p>{tagHeader}</p>
+              <p>
+                <FontAwesomeIcon icon={faTag} style={{padding: "2px", color: "grey"}}/>
+                {tagHeader}
+              </p>
               <ul className="taglist" style={{display: "inline"}}>{postLinks}</ul>
             </div>
           </div>
@@ -59,6 +65,7 @@ export const tagPageQuery = graphql`
             slug
           }
           frontmatter {
+            author
             title
           }
         }
