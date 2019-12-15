@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTag } from '@fortawesome/free-solid-svg-icons'
+import Img from 'gatsby-image'
 
 class TagRoute extends React.Component<TagType> {
   render() {
@@ -11,8 +12,11 @@ class TagRoute extends React.Component<TagType> {
     const postLinks = posts.map(post => (
       <li key={post.node.fields.slug} style={{ borderBottom: "0.5px solid #abb1b5", padding: 0}}>
         <Link to={post.node.fields.slug}>
-          <h4>{post.node.frontmatter.title}</h4>
-          <p className="josefin" style={{color: "#2b2523"}}>written by {post.node.frontmatter.author}</p>
+          <h4 style={{margin: "8px"}}>{post.node.frontmatter.title}</h4>
+          <div style={{display: "flex", alignItems: "center", marginBottom: "5px"}}>
+            <Img style={{width: "25px", borderRadius: "50%", margin: "5px"}} fluid={post.node.frontmatter.authorimage.childImageSharp.fluid} alt={post.node.frontmatter.author} />
+            <p className="josefin" style={{color: "#2b2523", fontSize: "12px"}}>written by {post.node.frontmatter.author}</p>
+          </div>
         </Link>
       </li>
     ))
@@ -66,6 +70,13 @@ export const tagPageQuery = graphql`
           }
           frontmatter {
             author
+            authorimage {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             title
           }
         }

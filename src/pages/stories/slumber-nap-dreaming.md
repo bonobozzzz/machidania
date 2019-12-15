@@ -3,8 +3,10 @@ templateKey: blog-post
 id: 12
 title: まどろみ、うたたね、夢をみる
 author: 春紫苑
+authorimage: /img/harushion.png
 featuredpost: false
 tags:
+  - 春紫苑
   - 令和の怪談
   - 百合
 ---

@@ -3,6 +3,7 @@ templateKey: blog-post
 id: 8
 title: エウリュディケの画筆
 author: nanica marui
+authorimage: /img/nanicamarui.png
 featuredimage: /img/euryd.jpg
 featuredpost: false
 tags:
@@ -10,10 +11,12 @@ tags:
   - 令和の怪談
   - SF
 ---
+<div style="font-style: italic;">
 「天から授かったものに従うことも、自然の命ずることです。私の授かったものは、夢にふけることでした。私は想像の跳梁に苦しめられ、それが鉛筆の下に描き出すものに驚かされました。けれどもはじめ驚かされたものを、逆に私の学んだ、また私の感じる芸術の生理に従わせて、見る人の眼に突然魅力あるものとし、思想の極限にある、言葉ではいい得ないものをそっくり呼び起こすように持っていったのです。」
 
 オディロン・ルドン　『ルドン　私自身に』
-
+</div>
+</br></br>
 
 １
 

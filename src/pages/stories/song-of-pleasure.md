@@ -3,6 +3,7 @@ templateKey: blog-post
 id: 5
 title: 享楽のうた
 author: akkt
+authorimage: /img/akkt.png
 featuredpost: false
 featuredimage: /img/kyorakunouta.jpg
 link: https://note.mu/machidania/n/n174aa8d50b55
