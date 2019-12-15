@@ -8,6 +8,7 @@ import Content, { HTMLContent } from '../components/Content'
 import BlogNoteLink from '../components/BlogNoteLink'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTag } from '@fortawesome/free-solid-svg-icons'
+import Img from 'gatsby-image'
 
 export const BlogPostTemplate = ({
   content,
@@ -16,6 +17,8 @@ export const BlogPostTemplate = ({
   tags,
   title,
   helmet,
+  author,
+  authorimage
 }) => {
   const PostContent = contentComponent || Content
 
@@ -34,16 +37,22 @@ export const BlogPostTemplate = ({
                   {tags.map(tag => (
                     <li key={tag + `tag`} className="tag-item">
                       <Link to={`/tags/${kebabCase(tag)}/`}>
-                        <FontAwesomeIcon icon={faTag} style={{padding: "2px", color: "grey"}}/>
+                        <FontAwesomeIcon icon={faTag} style={{marginRight: "3px", color: "grey"}}/>
                         {tag}
                       </Link>
                     </li>
                   ))}
                 </ul>
+                <Link to={`/tags/${author.replace(" ", "-")}/`} style={{display: "flex", alignItems: "center"}}>
+                  <Img style={{width: "25px", borderRadius: "50%", margin: "5px"}} fluid={authorimage.childImageSharp.fluid} alt={author} />
+                  <p className="josefin" style={{color: "#333", fontSize: "12px"}}>written by {author}</p>
+                </Link>
               </div>
             ) : null}
-            <PostContent content={content} />
-            <BlogNoteLink link={link} />
+            <div style={{marginTop: "30px"}}>
+              <PostContent content={content} />
+              <BlogNoteLink link={link} />
+            </div>
           </div>
         </div>
       </div>
@@ -56,6 +65,7 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   link: PropTypes.string,
   title: PropTypes.string,
+  author: PropTypes.string,
   helmet: PropTypes.object,
 }
 
@@ -79,6 +89,8 @@ const BlogPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        author={post.frontmatter.author}
+        authorimage={post.frontmatter.authorimage}
       />
     </Layout>
   )
@@ -99,6 +111,13 @@ export const pageQuery = graphql`
       html
       frontmatter {
         author
+        authorimage {
+          childImageSharp {
+            fluid(maxWidth: 240, quality: 64) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         title
         link
         tags

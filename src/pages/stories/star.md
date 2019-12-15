@@ -3,6 +3,7 @@ templateKey: blog-post
 id: 6
 title: '星の夜'
 author: '春紫苑'
+authorimage: /img/harushion.png
 featuredpost: false
 featuredimage: /img/yakei.jpg
 link: https://note.mu/y3y3y3y_chan/n/n3feb402b3775

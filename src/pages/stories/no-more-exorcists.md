@@ -3,12 +3,14 @@ templateKey: blog-post
 id: 11
 title: エクソシストは要らない
 author: akkt
+authorimage: /img/akkt.png
 featuredpost: false
 tags:
+  - akkt
   - 令和の怪談
 ---
 
-<div class="quote">
+<div style="font-style: italic;">
 　Since the 1990s, Lithuania lost almost one-quarter of its population, and some regions within the country lost more than 50% of their residents. [...] While the socio-spatial changes are obvious in Lithuania, there is no clear strategy on how to cope with extreme population decline and increasing regional inequalities within the country.
 
 　1990年代以降、リトアニアは人口のほぼ四分の一を失った。また一部の地域では住民が半分以上減少している。（中略）リトアニアでは社会空間の変化が著しいが、異常な人口減と地域間格差の悪化に対処するための明確な戦略は存在していない。

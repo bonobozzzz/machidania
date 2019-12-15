@@ -3,6 +3,7 @@ templateKey: blog-post
 id: 1
 title: ディアスポラ
 author: meme
+authorimage: /img/meme.png
 featuredpost: false
 featuredimage: /img/diaspora.jpg
 link: https://note.mu/machidania/n/nc512df3a6789

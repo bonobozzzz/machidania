@@ -3,6 +3,7 @@ templateKey: blog-post
 id: 9
 title: 眠りゆく者に敬礼を
 author: meme
+authorimage: /img/meme.png
 featuredpost: false
 featuredimage: /img/salute.jpg
 tags:
