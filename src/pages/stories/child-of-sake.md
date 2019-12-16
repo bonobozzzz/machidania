@@ -3,8 +3,10 @@ templateKey: blog-post
 id: 10
 title: 酒呑童子
 author: kawaiiyumegirl
+authorimage: /img/kawaiiyumegirl.png
 featuredpost: false
 tags:
+  - kawaiiyumegirl
   - 令和の怪談
   - 酒
 ---

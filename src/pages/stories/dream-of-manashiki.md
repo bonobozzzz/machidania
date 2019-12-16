@@ -3,6 +3,7 @@ templateKey: blog-post
 id: 2
 title: 末那識の夢
 author: kawaiiyumegirl
+authorimage: /img/kawaiiyumegirl.png
 featuredpost: false
 featuredimage: /img/dream_of_manashiki.jpg
 link: https://note.mu/machidania/n/n36d64b7f47d1

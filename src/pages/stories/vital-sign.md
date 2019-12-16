@@ -3,6 +3,7 @@ templateKey: blog-post
 id: 7
 title: バイタルサイン
 author: kawaiiyumegirl
+authorimage: /img/kawaiiyumegirl.png
 featuredpost: false
 featuredimage: /img/vitalsign.jpg
 link: https://note.mu/machidania/n/ndd7cb9891cb9

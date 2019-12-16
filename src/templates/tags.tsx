@@ -2,6 +2,9 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTag } from '@fortawesome/free-solid-svg-icons'
+import Img from 'gatsby-image'
 
 class TagRoute extends React.Component<TagType> {
   render() {
@@ -9,7 +12,11 @@ class TagRoute extends React.Component<TagType> {
     const postLinks = posts.map(post => (
       <li key={post.node.fields.slug} style={{ borderBottom: "0.5px solid #abb1b5", padding: 0}}>
         <Link to={post.node.fields.slug}>
-          <h4>{post.node.frontmatter.title}</h4>
+          <h4 style={{margin: "8px"}}>{post.node.frontmatter.title}</h4>
+          <div style={{display: "flex", alignItems: "center", marginBottom: "5px"}}>
+            <Img style={{width: "25px", borderRadius: "50%", margin: "5px"}} fluid={post.node.frontmatter.authorimage.childImageSharp.fluid} alt={post.node.frontmatter.author} />
+            <p className="josefin" style={{color: "#2b2523", fontSize: "12px"}}>written by {post.node.frontmatter.author}</p>
+          </div>
         </Link>
       </li>
     ))
@@ -28,7 +35,10 @@ class TagRoute extends React.Component<TagType> {
               className="column is-10 is-offset-1"
               style={{ marginBottom: '6rem'}}
             >
-              <p>{tagHeader}</p>
+              <p>
+                <FontAwesomeIcon icon={faTag} style={{padding: "2px", color: "grey"}}/>
+                {tagHeader}
+              </p>
               <ul className="taglist" style={{display: "inline"}}>{postLinks}</ul>
             </div>
           </div>
@@ -59,6 +69,14 @@ export const tagPageQuery = graphql`
             slug
           }
           frontmatter {
+            author
+            authorimage {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             title
           }
         }

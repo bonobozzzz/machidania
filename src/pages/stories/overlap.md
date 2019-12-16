@@ -3,6 +3,7 @@ templateKey: blog-post
 id: 4
 title: オーバーラップ
 author: meme
+authorimage: /img/meme.png
 featuredpost: false
 featuredimage: /img/overrap.jpg
 link: https://note.mu/machidania/n/n189c7f725fe1

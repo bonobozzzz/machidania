@@ -3,6 +3,7 @@ templateKey: blog-post
 id: 3
 title: '[lullaby of birdland]'
 author: nanica marui
+authorimage: /img/nanicamarui.png
 featuredpost: false
 featuredimage: /img/lullaby_of_birdland.jpg
 link: https://note.mu/machidania/n/n827c4d930722
