@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 import TwitterLink from './TwitterLink'
 import NoteLink from './NoteLink'
+import HatenaLink from './hatenaLink'
 import { Link } from 'gatsby'
 import { kebabCase } from 'lodash'
 
@@ -26,6 +27,7 @@ const FeatureGrid = ({ gridItems }) => (
             <h4 style={{ marginBottom: 5, paddingRight: 5 }}>{item.name}</h4>
             <TwitterLink link={item.link} />
             <NoteLink link={item.link} />
+            <HatenaLink link ={item.link}/>
           </div>
           <p>{item.text}</p>
           <Link to={`/tags/${kebabCase(item.name)}/`} className="josefin" style={{

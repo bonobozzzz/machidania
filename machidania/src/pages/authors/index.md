@@ -11,6 +11,7 @@ main:
       text: >
         幼稚園児だった約二十年前、周囲の将来の夢はタイムレンジャーや仮面ライダーだったのですが、自分の将来の夢はウサギでした。先日、地元の町田リス園でウサギを見て将来はウサギになりたいとの思いをより一層強くしました。
     - image: /img/harushion.png
+      link: https://note.mu/y3y3y3y_chan
       link: http://omaega-shine.hatenablog.jp/
       name: 春紫苑
       text: >
