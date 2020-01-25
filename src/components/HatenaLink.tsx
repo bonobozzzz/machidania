@@ -5,7 +5,7 @@ interface Link {
   link: string
 }
 
-const hatenaLink = ({link}: Link) => {
+const HatenaLink = ({link}: Link) => {
   if (link !== undefined && link.includes("hatenablog.jp")) {
     return (
     <a title="hatenablog" href={link}>
@@ -22,4 +22,4 @@ const hatenaLink = ({link}: Link) => {
   }
 }
 
-export default hatenaLink
+export default HatenaLink
